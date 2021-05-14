@@ -27,7 +27,7 @@ app.post("/",function(req,res){
             const image = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
             console.log(temp + " " + desc);
             //res.write("<img src="+image+"/><br/>");
-            res.write("<h1>The temperature in "+p+" right now is " + temp + " and it is "+ desc + " out there!</h1>");
+            res.write("<h1>The temperature in "+p+" right now is " + temp + "&deg and it is "+ desc + " out there!</h1>");
             res.write("<img src="+image+"><br>");
             res.send();
         })
